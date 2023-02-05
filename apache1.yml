@@ -14,7 +14,7 @@
       community.general.timezone:
         name: Africa/Lagos
     - name: display my hostname
-      shell: echo "<h2>This is my $(hostname -f) and today's date is $(date)</h2>" > /var/www/html/index.html
+      shell: echo "<h2>This is my $(hostname -f) and the date is $(date)</h2>" > /var/www/html/index.html
     - name: restart httpd service
       service:
         name: httpd
